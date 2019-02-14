@@ -55,6 +55,9 @@
                 <div class="col col-sm">
                     <img src="images/logo.png" class="img-fluid">
                 </div>
+                <div class="col col-sm">
+                    <a type="button" class="btn btn-warning btn-sm" href="#reserve-form">Reserve your baskets</a>
+                </div>
             </div>
         </div>
     </header>
@@ -116,66 +119,80 @@
 
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-md-8 mt-3 mb-3">
+    <div class="row row-content justify-content-center">
+        <div class="col-12 col-sm-8">
             <div class="card">
-                <h5 class="card-header bg-warning text-light">Reserve your baskets</h5>
-                <div class="card-body">
-                    <div class="form-group-row">
-                        <label class="form-check form-check-inline" for="customRadio1">Number of baskets</label>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" value="1">
-                            <label class="form-check-label" for="customRadio1">1</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="customRadio2" name="customRadio" class="form-check-input" value="2">
-                            <label class="form-check-label" for="customRadio2">2</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="customRadio3" name="customRadio" class="form-check-input" value="3">
-                            <label class="form-check-label" for="customRadio3">3</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="customRadio4" name="customRadio" class="form-check-input" value="4">
-                            <label class="form-check-label" for="customRadio4">4</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="customRadio5" name="customRadio" class="form-check-input" value="5">
-                            <label class="form-check-label" for="customRadio5">5</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="customRadio6" name="customRadio" class="form-check-input" value="6">
-                            <label class="form-check-label" for="customRadio6">6</label>
-                        </div>
-                    </div>
-                    <br>
+                <div class="card border-default">
+                    <h3 class="card-header bg-warning text-white" id="reserve-form">Reserve your baskets</h3>
+                    <div class="card-body">
+                        <form>
+                            <!-- radio buttons -->
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-3 col-form-label" for="customRadio1">Number of baskets</label>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="form-check-input"
+                                            value="1">
+                                        <label class="form-check-label" for="customRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="form-check-input"
+                                            value="2">
+                                        <label class="form-check-label" for="customRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="customRadio3" name="customRadio" class="form-check-input"
+                                            value="3">
+                                        <label class="form-check-label" for="customRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="customRadio4" name="customRadio" class="form-check-input"
+                                            value="4">
+                                        <label class="form-check-label" for="customRadio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="customRadio5" name="customRadio" class="form-check-input"
+                                            value="5">
+                                        <label class="form-check-label" for="customRadio5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="customRadio6" name="customRadio" class="form-check-input"
+                                            value="6">
+                                        <label class="form-check-label" for="customRadio6">6</label>
+                                    </div>
+                                </div>
+                            <br>
 
-                    <label class="form-check form-check-inline">Date and Time</label>
+                            <label class="form-check form-check-inline">Date and Time</label>
 
-                    <div class="form-check form-check-inline">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i>
-                                </span>
+                            <div class="form-check form-check-inline">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <input type="date" class="form-control" placeholder="dd-----yyyy" aria-label="Date"
+                                        aria-describedby="basic-addon1">
+                                </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="dd-----yyyy" aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-                    </div>
 
-                    <div class="form-check form-check-inline">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i>
-                                </span>
+                            <div class="form-check form-check-inline">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-clock-o"
+                                                aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <input type="time" class="form-control" placeholder="--:-- --" aria-label="Time"
+                                        aria-describedby="basic-addon1">
+                                </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="--:-- --" aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
+                            <!-- reserve button -->
+                            <div>
+                                <a href="#" class="btn btn-primary">Reserve</a>
+                            </div>
                     </div>
-                    <div>
-                        <a href="#" class="btn btn-primary">Reserve</a>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
