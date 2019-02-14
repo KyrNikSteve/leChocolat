@@ -13,6 +13,10 @@
     <!-- Local external CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Le Chocolat</title>
+    <style>
+    #modalClicker{
+        cursor: pointer;
+    }</style>
 </head>
 
 <body>
@@ -40,9 +44,57 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
                             Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" id="" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -56,7 +108,10 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col col-sm">
-                    <a type="button" class="btn btn-warning btn-sm" href="#reserve-form">Reserve your baskets</a>
+                    <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true"
+                        title="Or Call us at <br><strong>+ 987 6543 2100</strong>" data-placement="bottom" href="#reserve-form">
+                        Reserve your baskets
+                    </a>
                 </div>
             </div>
         </div>
@@ -129,37 +184,37 @@
                             <!-- radio buttons -->
                             <div class="form-group row">
                                 <label class="col-12 col-sm-3 col-form-label" for="customRadio1">Number of baskets</label>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="form-check-input"
-                                            value="1">
-                                        <label class="form-check-label" for="customRadio1">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="form-check-input"
-                                            value="2">
-                                        <label class="form-check-label" for="customRadio2">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" id="customRadio3" name="customRadio" class="form-check-input"
-                                            value="3">
-                                        <label class="form-check-label" for="customRadio3">3</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" id="customRadio4" name="customRadio" class="form-check-input"
-                                            value="4">
-                                        <label class="form-check-label" for="customRadio4">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" id="customRadio5" name="customRadio" class="form-check-input"
-                                            value="5">
-                                        <label class="form-check-label" for="customRadio5">5</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" id="customRadio6" name="customRadio" class="form-check-input"
-                                            value="6">
-                                        <label class="form-check-label" for="customRadio6">6</label>
-                                    </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="form-check-input"
+                                        value="1">
+                                    <label class="form-check-label" for="customRadio1">1</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="form-check-input"
+                                        value="2">
+                                    <label class="form-check-label" for="customRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="customRadio3" name="customRadio" class="form-check-input"
+                                        value="3">
+                                    <label class="form-check-label" for="customRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="customRadio4" name="customRadio" class="form-check-input"
+                                        value="4">
+                                    <label class="form-check-label" for="customRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="customRadio5" name="customRadio" class="form-check-input"
+                                        value="5">
+                                    <label class="form-check-label" for="customRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="customRadio6" name="customRadio" class="form-check-input"
+                                        value="6">
+                                    <label class="form-check-label" for="customRadio6">6</label>
+                                </div>
+                            </div>
                             <br>
 
                             <label class="form-check form-check-inline">Date and Time</label>
@@ -258,7 +313,16 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        // $(function () {
+        //     $('[data-toggle="tooltip"]').tooltip()
+        // })
+    </script>
 </body>
 
 </html>
